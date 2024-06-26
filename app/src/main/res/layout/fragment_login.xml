@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/jua"
+        android:text="Logea y empieza a transferir!"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTLoginEmail"
+        app:layout_constraintStart_toStartOf="@+id/eTLoginEmail" />
+
+    <EditText
+        android:id="@+id/eTLoginEmail"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar tu email"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTLoginPassword"
+        app:layout_constraintStart_toStartOf="@+id/eTLoginPassword" />
+
+    <EditText
+        android:id="@+id/eTLoginPassword"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar tu contraseña"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/eye_icon"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:iconTint="#CDCDCD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Olvidaste tu contraseña?"
+        android:textColor="@color/celeste_wallet"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/eTLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/eTLoginPassword"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLoginIniciarSesion"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/celeste_wallet"
+        android:fontFamily="@font/jua"
+        android:text="Login"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Crear un cuenta nueva"
+        android:textColor="@color/celeste_wallet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnLoginIniciarSesion"
+        app:layout_constraintStart_toStartOf="@+id/btnLoginIniciarSesion"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginIniciarSesion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

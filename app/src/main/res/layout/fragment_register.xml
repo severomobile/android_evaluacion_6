@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/jua"
+        android:text="Registrarse y
+            empezar a transferir"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTRegisterFirstName"
+        app:layout_constraintStart_toStartOf="@+id/eTRegisterFirstName" />
+
+    <EditText
+        android:id="@+id/eTRegisterFirstName"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar nombre"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.06"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Apellido"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTRegisterLastName"
+        app:layout_constraintStart_toStartOf="@+id/eTRegisterLastName" />
+
+    <EditText
+        android:id="@+id/eTRegisterLastName"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar apellido"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRegisterFirstName"
+        app:layout_constraintVertical_bias="0.08"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/eTRegisterEmail" />
+
+    <EditText
+        android:id="@+id/eTRegisterEmail"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar email"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRegisterLastName"
+        app:layout_constraintVertical_bias="0.1"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/eTRegisterPassword" />
+
+    <EditText
+        android:id="@+id/eTRegisterPassword"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Ingresar contraseña"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/eye_icon"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:iconTint="#CDCDCD"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRegisterEmail"
+        app:layout_constraintVertical_bias="0.14"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Reingresar contraseña"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTRegisterConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/eTRegisterConfirmPassword" />
+
+    <EditText
+        android:id="@+id/eTRegisterConfirmPassword"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="Reingresar contraseña"
+        android:textAlignment="textStart"
+        android:textColor="#B3ACAC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/eye_icon"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:iconTint="#CDCDCD"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRegisterPassword"
+        app:layout_constraintVertical_bias="0.18"
+        app:strokeColor="#EAEAEA"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btnRegisterCrearCuenta"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/celeste_wallet"
+        android:fontFamily="@font/jua"
+        android:text="Crear Cuenta"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRegisterConfirmPassword"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/tienes_cuenta_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua"
+        android:text="Ya tienes una cuenta?"
+        android:textColor="@color/celeste_wallet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegisterCrearCuenta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
